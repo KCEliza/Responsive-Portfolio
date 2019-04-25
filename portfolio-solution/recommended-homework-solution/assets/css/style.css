@@ -216,7 +216,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
 
   #logo{
     width:100%;
@@ -255,5 +255,16 @@ input[type=submit] {
   ul{
     list-style-type:none;
   }
-
 }
+  @media only screen and (min-width: 980px){
+
+    #logo{
+      width:250px;
+    }
+    .main-section{
+      width:60%;
+    }
+    
+
+  }
+
