@@ -215,15 +215,19 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
-@media only screen and (min-width: 640px) {
-
+@media screen and (max-width: 640px) {
+  
+  #masthead{
+    position:static;
+  }
   #logo{
     width:100%;
-
   }
   nav{
     margin-right:30%;
+  }
+  .auth-image{
+    width:100%;
   }
   #main-container{
     padding-top: 0;
@@ -238,33 +242,46 @@ input[type=submit] {
   }
   ul{
     list-style-type: none;
+    padding: 0;
   }
-  #masthead{
-    position:static;
-  }
+  
 }
-@media only screen and (min-width: 768px) {
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
 
   nav{
-    margin-right:5%;
+    margin-right:3%;
   }
   .work{
-    width:45%;
-    margin: none;
+    width:47%;
   }
   ul{
     list-style-type:none;
+    padding:0;
   }
+  
 }
-  @media only screen and (min-width: 980px){
+@media screen and (min-width: 769px) and (max-width: 980px){
 
-    #logo{
-      width:250px;
-    }
-    .main-section{
-      width:60%;
-    }
-    
-
+  #logo{
+    width:250px;
   }
+  ul{
+    list-style-type:none;
+    padding:0;
+  }
+  nav{
+    margin-right: 3%;
+  }
+  .main-section{
+    width:60%;
+    height: 50%;
+  }
+  
+  
+
+}
+
+
+
 
